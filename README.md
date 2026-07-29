@@ -50,7 +50,6 @@ O Audit Service é responsável por:
 
 ⬆️ [Voltar ao índice](#indice)
 
----
 
 <a id="fora-do-escopo"></a>
 ## 🚫 Fora do escopo
@@ -64,6 +63,8 @@ O Audit Service não é responsável por:
 - Publicar eventos.
 
 ⬆️ [Voltar ao índice](#indice)
+
+---
 
 <a id="modelo-de-dados"></a>
 # 🗄️ Modelo de dados
@@ -117,8 +118,6 @@ A API disponibiliza apenas operações de consulta, não sendo possível criar, 
 
 O modelo de dados do Audit Service é composto por uma única entidade.
 
----
-
 <a id="audit-event"></a>
 ### 📋 AuditEvent
 
@@ -149,7 +148,6 @@ Representa um evento de auditoria persistido pelo Audit Service após o consumo 
 
 ⬆️ [Voltar ao índice](#indice)
 
----
 
 <a id="regras-de-modelagem"></a>
 ## 📐 Regras de modelagem
@@ -162,6 +160,8 @@ Representa um evento de auditoria persistido pelo Audit Service após o consumo 
 - Os campos `occurredAt` e `recordedAt` registram, respectivamente, o momento da ocorrência e da persistência do evento.
 
 ⬆️ [Voltar ao índice](#indice)
+
+---
 
 <a id="dtos"></a>
 # 📦 Modelos de requisição e resposta (DTOs)
@@ -211,8 +211,6 @@ Utilizado para retornar os dados completos de um evento de auditoria.
 
 ⬆️ [Voltar ao índice](#indice)
 
----
-
 <a id="audit-event-summary-response"></a>
 ### AuditEventSummaryResponse
 
@@ -250,7 +248,6 @@ Utilizado para retornar os dados resumidos de um evento de auditoria nas operaç
 
 ⬆️ [Voltar ao índice](#indice)
 
----
 
 <a id="page-audit-event-summary-response"></a>
 ### Page<AuditEventSummaryResponse>
@@ -292,12 +289,12 @@ Utilizado para retornar uma lista paginada de eventos de auditoria.
 
 ⬆️ [Voltar ao índice](#indice)
 
+---
+
 <a id="eventos-de-auditoria"></a>
 # 📋 Eventos de auditoria
 
 Esta seção documenta os endpoints responsáveis pela consulta dos eventos de auditoria registrados na plataforma.
-
----
 
 <a id="listar-eventos"></a>
 ## 📋 Listar Eventos
@@ -385,7 +382,6 @@ DTO: `Page<AuditEventSummaryResponse>`
 
 ⬆️ [Voltar ao índice](#indice)
 
----
 
 <a id="buscar-evento"></a>
 ## 🔍 Buscar Evento
